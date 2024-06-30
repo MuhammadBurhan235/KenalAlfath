@@ -29,7 +29,7 @@
 <body>
     <div class="banner" id="banner1">
         <div class="slider" id="slider1" style="--quantity: 10">
-            <div class="item" style="--position: 1"><a href="masul"><img src="images/mas_ul.png" alt=""></a><div class="card"></div></div>
+            <div class="item" style="--position: 1"><a href="masul"><img src="images/mas_ul.png" alt=""></a><div class="card blink"></div></div>
             <div class="item" style="--position: 2"><a href="sekjen"><img src="images/sekjen.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 3"><a href="mo"><img src="images/mo.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 4"><a href="korwat"><img src="images/korwat.png" alt=""></a><div class="card"></div></div>
@@ -51,16 +51,11 @@
     </div>
     <div class="banner" id="banner2">
         <div class="slider" id="slider2" style="--quantity: 5">
-            <div class="item" style="--position: 1"><a href="masul"><img src="images/mas_ul.png" alt=""></a><div class="card"></div></div>
+            <div class="item" style="--position: 1"><a href="masul"><img src="images/mas_ul.png" alt=""></a><div class="card blink"></div></div>
             <div class="item" style="--position: 2"><a href="sekjen"><img src="images/sekjen.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 3"><a href="mo"><img src="images/mo.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 4"><a href="korwat"><img src="images/korwat.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 5"><a href="bend1"><img src="images/bendahara1.png" alt=""></a><div class="card"></div></div>
-            <div class="item" style="--position: 6"><a href="kdrp"><img src="images/kdrp.png" alt=""></a><div class="card"></div></div>
-            <div class="item" style="--position: 7"><a href="sekre"><img src="images/sekre.png" alt=""></a><div class="card"></div></div>
-            <div class="item" style="--position: 8"><a href="mki"><img src="images/medkominfo.png" alt=""></a><div class="card"></div></div>
-            <div class="item" style="--position: 9"><a href="syiar"><img src="images/syiar.png" alt=""></a><div class="card"></div></div>
-            <div class="item" style="--position: 10"><a href="psdm"><img src="images/psdm.png" alt=""></a><div class="card"></div></div>
         </div>
         <div class="content">
             <h1 data-content="AWARD">
@@ -73,7 +68,7 @@
     </div>
     <div class="banner" id="banner3">
         <div class="slider" id="slider3" style="--quantity: 10">
-            <div class="item" style="--position: 1"><a href="masul"><img src="images/mas_ul.png" alt=""></a><div class="card"></div></div>
+            <div class="item" style="--position: 1"><a href="masul"><img src="images/mas_ul.png" alt=""></a><div class="card blink"></div></div>
             <div class="item" style="--position: 2"><a href="sekjen"><img src="images/sekjen.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 3"><a href="mo"><img src="images/mo.png" alt=""></a><div class="card"></div></div>
             <div class="item" style="--position: 4"><a href="korwat"><img src="images/korwat.png" alt=""></a><div class="card"></div></div>
