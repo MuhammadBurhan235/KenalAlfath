@@ -19,24 +19,42 @@
  * @package WordPress
  */
 
+//Using environment variables for memory limits
+$wp_memory_limit = (getenv('WP_MEMORY_LIMIT') && preg_match("/^[0-9]+M$/", getenv('WP_MEMORY_LIMIT'))) ? getenv('WP_MEMORY_LIMIT') : '128M';
+$wp_max_memory_limit = (getenv('WP_MAX_MEMORY_LIMIT') && preg_match("/^[0-9]+M$/", getenv('WP_MAX_MEMORY_LIMIT'))) ? getenv('WP_MAX_MEMORY_LIMIT') : '256M';
+
+/** General WordPress memory limit for PHP scripts*/
+define('WP_MEMORY_LIMIT', $wp_memory_limit );
+
+/** WordPress memory limit for Admin panel scripts */
+define('WP_MAX_MEMORY_LIMIT', $wp_max_memory_limit );
+
+
+//Using environment variables for DB connection information
+
 // ** Database settings - You can get this info from your web host ** //
+$connectstr_dbhost = getenv('DATABASE_HOST');
+$connectstr_dbname = getenv('DATABASE_NAME');
+$connectstr_dbusername = getenv('DATABASE_USERNAME');
+$connectstr_dbpassword = getenv('DATABASE_PASSWORD');
+
 /** The name of the database for WordPress */
-define( 'DATABASE_NAME', '174ad5d0c77a8266a128a9dd_database' );
+define('DB_NAME', $connectstr_dbname);
 
-/** Database username */
-define( 'DATABASE_USERNAME', 'emcmhpoxag' );
+/** MySQL database username */
+define('DB_USER', $connectstr_dbusername);
 
-/** Database password */
-define( 'DATABASE_PASSWORD', 'PPTZCc$HGWwsgjRR' );
+/** MySQL database password */
+define('DB_PASSWORD',$connectstr_dbpassword);
 
-/** Database hostname */
-define( 'DATABASE_HOST', '174ad5d0c77a8266a128a9dd-dbserver.mysql.database.azure.com' );
+/** MySQL hostname */
+define('DB_HOST', $connectstr_dbhost);
 
-/** Database charset to use in creating database tables. */
-define( 'DATABASE_CHARSET', 'utf8mb3' );
+/** Database Charset to use in creating database tables. */
+define( 'DB_CHARSET', 'utf8' );
 
-/** The database collate type. Don't change this if in doubt. */
-define( 'DATABASE_COLLATE', '' );
+/** The Database Collate type. Don't change this if in doubt. */
+define( 'DB_COLLATE', '' );
 
 /**#@+
  * Authentication unique keys and salts.
