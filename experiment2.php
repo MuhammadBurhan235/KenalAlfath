@@ -148,9 +148,9 @@
                     const angle = (position - 1) * (360 / quantity);
 
                     if (quantity === 5) {
-                        item.style.transform = `rotateY(${angle}deg) translateZ(30vw)`;
+                        item.style.transform = `rotateY(${angle}deg) translateZ(400px)`;
                     } else if (quantity === 10) {
-                        item.style.transform = `rotateY(${angle}deg) translateZ(50vw)`;
+                        item.style.transform = `rotateY(${angle}deg) translateZ(550px)`;
                     }
                 });
 
