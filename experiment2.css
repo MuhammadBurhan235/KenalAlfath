@@ -122,7 +122,7 @@
 
 .banner .content h1::after {
   inset: 0;
-  font-size: 0.5em;
+  font-size: 0.7em;
   content: attr(data-content);
   color: #25283b;
   -webkit-text-stroke: 2px #d2d2d2;
@@ -281,14 +281,28 @@
   .banner .slider {
     width: 160px;
     height: 200px;
-    left: calc(50% - 80px);
+    left: calc(50% - 90px);
+  }
+
+  .banner .slider .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(600px);
+    align-items: center;
+    justify-content: center;
   }
 
   .banner .content h1 {
+    font-family: "ICA Rubrik";
+    line-height: 0.5em;
+    color: #25283b;
+    position: relative;
     text-align: center;
     width: 100%;
-    text-shadow: 0 10px 20px #000;
-    font-size: 7em;
+    font-size: 6em;
   }
 
   .banner .content .author {
@@ -311,11 +325,14 @@
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 100%;
-    left: 0%;
+    right: 100%;
   }
+  .navigation button {
+    width: 165px;
+  }
+
   .ppp {
-    bottom: -1100px;
+    bottom: -1110px;
   }
 
   .card.blink {
@@ -342,6 +359,16 @@
     left: calc(50% - 50px);
     top: 17%;
   }
+  .banner .slider .item {
+    position: absolute;
+    inset: 0;
+    transform: rotateY(
+        calc((var(--position) - 1) * (360 / var(--quantity)) * 1deg)
+      )
+      translateZ(200px);
+    align-items: center;
+    justify-content: center;
+  }
 
   @keyframes autoRun {
     from {
@@ -354,6 +381,7 @@
 
   .banner .content h1 {
     font-size: 3em;
+    top: -35px;
   }
 
   .banner .slider .item .card {
@@ -370,10 +398,34 @@
   }
 
   .ppp {
-    bottom: -730px;
+    bottom: -1125px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    width: 420px;
+  }
+  .navigation button {
+    width: 190px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banner .content h1 {
+    font-size: 2.5em;
+    top: -60px;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    width: 360px;
   }
 
   .navigation button {
-    width: 90px;
+    width: 160px;
+  }
+
+  .ppp {
+    bottom: -1100px;
   }
 }

@@ -135,29 +135,6 @@
             }
         }
 
-        document.addEventListener("DOMContentLoaded", function() {
-            const sliders = document.querySelectorAll('.slider');
-
-            sliders.forEach(slider => {
-                const quantity = parseInt(slider.style.getPropertyValue('--quantity'));
-                const items = slider.querySelectorAll('.item');
-
-                // Set transform style for each item based on quantity
-                items.forEach(item => {
-                    const position = parseInt(item.style.getPropertyValue('--position'));
-                    const angle = (position - 1) * (360 / quantity);
-
-                    if (quantity === 5) {
-                        item.style.transform = `rotateY(${angle}deg) translateZ(400px)`;
-                    } else if (quantity === 10) {
-                        item.style.transform = `rotateY(${angle}deg) translateZ(550px)`;
-                    }
-                });
-
-                // Set @keyframes autoRun based on quantity
-            });
-        });
-
         var modal = document.getElementById("myModal");
 
         var span = document.getElementsByClassName("close")[0];
